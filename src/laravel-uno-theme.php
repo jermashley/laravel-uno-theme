@@ -1,6 +1,6 @@
 <?php
 
-namespace Jermashley\LaravelUnoTheme;
+namespace Jermashley;
 
 use Illuminate\Support\ServiceProvider;
 
