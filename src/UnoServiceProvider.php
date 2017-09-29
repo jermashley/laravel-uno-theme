@@ -13,14 +13,19 @@ class UnoServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$sass = realpath(__DIR__ . '/assets/sass');
+        $routes = realpath(__DIR__ . '/routes.php');
+        $sass = realpath(__DIR__ . '/assets/sass');
 		$js = realpath(__DIR__ . '/assets/js');
-		$routes = realpath(__DIR__ . '/routes.php');
+		$images = realpath(__DIR__ . '/assets/images');
+		$video = realpath(__DIR__ . '/assets/video');
 		$views = realpath(__DIR__ . '/views/app');
+		$webpack = realpath(__DIR__ . '/webpack.mix.js');
 
 		$this->loadRoutesFrom($routes);
 
-		$this->publishes([
+        $this->loadViewsFrom($views, 'uno-theme');
+
+        $this->publishes([
 			$sass => resource_path('assets/sass'),
 		], 'sass');
 
@@ -28,6 +33,17 @@ class UnoServiceProvider extends ServiceProvider
 			$js => resource_path('assets/js'),
 		], 'js');
 
-		$this->loadViewsFrom($views, 'uno-theme');
+        $this->publishes([
+            $images => resource_path('assets/iamges'),
+        ], 'images');
+
+        $this->publishes([
+            $video => resource_path('assets/video'),
+        ], 'video');
+
+		$this->publishes([
+		    $webpack => base_path('webpack.mix.js')
+        ]);
+
 	}
 }
