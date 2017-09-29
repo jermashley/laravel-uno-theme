@@ -1,0 +1,115 @@
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl:1500px
+);
+
+$grid-columns: 12;
+$grid-gutter-width-base: 30px;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base,
+  xxl: $grid-gutter-width-base
+);
+
+
+// Spacers
+$spacer: 1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  1: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  2: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  3: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  ),
+  4: (
+    x: ($spacer-x * 4.5),
+    y: ($spacer-y * 4.5)
+  ),
+  5: (
+    x: ($spacer-x * 6),
+    y: ($spacer-y * 6)
+  ),
+  6: (
+    x: ($spacer-x * 7.5),
+    y: ($spacer-y * 7.5)
+  ),
+  10: (
+    x: ($spacer-x * 10),
+    y: ($spacer-y * 10)
+  )
+);
+
+.btn {
+    padding: .5rem 1.5rem;
+    font-size: .95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hidden {
+  display: none;
+  transition: $transition-350;
+}
+
+
+.checker-red {
+	border: 1px solid red;
+}
+
+.checker-green {
+	border: 1px solid lime;
+}
+
+.checker-blue {
+	border: 1px solid blue;
+}
+
+.fa {
+    transition: $transition-350;
+}
+
+label {
+  margin-bottom: 0;
+}

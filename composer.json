@@ -1,0 +1,13 @@
+{
+    "name": "jermashley/laravel-uno-theme",
+    "description": "Site theme for Flat World family of sites.",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremiah Ashley",
+            "email": "jeremiah@prologuetechnology.com"
+        }
+    ],
+    "require": {}
+}
