@@ -1,10 +1,10 @@
 <?php
 
-namespace Jermashley;
+namespace Jermashley\LaravelUnoTheme;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelUnoThemeServiceProvider extends ServiceProvider
+class UnoServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -27,7 +27,7 @@ class LaravelUnoThemeServiceProvider extends ServiceProvider
             $js => resources_path('assets/js')
         ], 'js');
 
-        $this->loadViewsFrom(__DIR__ . 'views/app', 'laravel-uno-theme');
+        $this->loadViewsFrom(__DIR__ . 'views/app', 'uno-theme');
 
     }
 
