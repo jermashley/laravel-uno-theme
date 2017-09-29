@@ -18,6 +18,7 @@ class UnoServiceProvider extends ServiceProvider
 		$js = realpath(__DIR__ . '/assets/js');
 		$images = realpath(__DIR__ . '/assets/images');
 		$video = realpath(__DIR__ . '/assets/video');
+		$fonts = realpath(__DIR__ . '/assets/fonts');
 		$views = realpath(__DIR__ . '/views/app');
 		$webpack = realpath(__DIR__ . '/webpack.mix.js');
 
@@ -40,6 +41,10 @@ class UnoServiceProvider extends ServiceProvider
         $this->publishes([
             $video => resource_path('assets/video'),
         ], 'video');
+
+        $this->publishes([
+            $fonts => resource_path('assets/fonts'),
+        ], 'fonts');
 
 		$this->publishes([
 		    $webpack => base_path('webpack.mix.js')
