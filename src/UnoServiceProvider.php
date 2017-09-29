@@ -34,7 +34,7 @@ class UnoServiceProvider extends ServiceProvider
 		], 'js');
 
         $this->publishes([
-            $images => resource_path('assets/iamges'),
+            $images => resource_path('assets/images'),
         ], 'images');
 
         $this->publishes([
@@ -43,7 +43,7 @@ class UnoServiceProvider extends ServiceProvider
 
 		$this->publishes([
 		    $webpack => base_path('webpack.mix.js')
-        ]);
+        ], 'webpack');
 
 	}
 }
