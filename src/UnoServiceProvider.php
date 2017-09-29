@@ -25,7 +25,7 @@ class UnoServiceProvider extends ServiceProvider
 		], 'sass');
 
 		$this->publishes([
-			$js => resources_path('assets/js'),
+			$js => resource_path('assets/js'),
 		], 'js');
 
 		$this->loadViewsFrom($views, 'uno-theme');
