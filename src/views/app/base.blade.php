@@ -44,7 +44,7 @@
 
                     <div class="nav-links">
 
-                        @include('app.navLinks', ['position'=>'navigation'])
+                        @include('nav.navLinks', ['position'=>'navigation'])
 
                     </div>
 
@@ -82,7 +82,7 @@
 
             <div class="footer-links">
 
-                @include('app.navLinks', ['position'=>'footer'])
+                @include('nav.navLinks', ['position'=>'footer'])
 
             </div>
 
