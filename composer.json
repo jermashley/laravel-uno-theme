@@ -15,7 +15,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Jermashely\\": "src"
+            "Jermashley\\LaravelUnoTheme\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jermashley\\LaravelUnoTheme\\UnoServiceProvider"
+            ]
         }
     },
     "config": {
