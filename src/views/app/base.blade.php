@@ -17,7 +17,7 @@
         <header>
 
             <div class="header__coverImage">
-                <img src="{{ asset('images/hero-background.jpg') }}" alt="">
+                <img src="{{ asset('images/hero-background.jpg') }}" class="" alt="">
             </div>
 
             <nav >
