@@ -9,5 +9,8 @@
             "email": "jeremiah@prologuetechnology.com"
         }
     ],
-    "require": {}
+    "config": {
+        "minimum-stability": "dev",
+        "prefer-stable": true
+    }
 }
