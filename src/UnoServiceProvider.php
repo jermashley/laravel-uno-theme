@@ -19,12 +19,13 @@ class UnoServiceProvider extends ServiceProvider
 		$images = realpath(__DIR__ . '/assets/images');
 		$video = realpath(__DIR__ . '/assets/video');
 		$fonts = realpath(__DIR__ . '/assets/fonts');
-		$views = realpath(__DIR__ . '/views/app');
+		$theme = realpath(__DIR__ . '/views/app/base.blade.php');
 		$webpack = realpath(__DIR__ . '/webpack.mix.js');
+		$navigation = realpath(__DIR__ . '/views/app/navLinks.blade.php');
 
 		$this->loadRoutesFrom($routes);
 
-        $this->loadViewsFrom($views, 'uno-theme');
+        $this->loadViewsFrom($theme, 'uno-theme');
 
         $this->publishes([
 			$sass => resource_path('assets/sass'),
@@ -47,8 +48,12 @@ class UnoServiceProvider extends ServiceProvider
         ], 'fonts');
 
 		$this->publishes([
-		    $webpack => base_path('webpack.mix.js')
+		    $webpack => base_path('webpack.mix.js'),
         ], 'webpack');
+
+		$this->publishes([
+            $navigation => resources_path('views'),
+        ], 'navigation');
 
 	}
 }

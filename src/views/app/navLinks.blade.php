@@ -1,4 +1,4 @@
-<div class="parentMenu {{ Route::is(['link1', 'link1A']) ? 'current' : '' }}">
+<div class="parentMenu {{ Route::is(['link1', '']) ? 'current' : '' }}">
 
     <a href="{{ route('link1') }}">Link 1</a>
 
@@ -6,7 +6,7 @@
         {{--<div class="overflowMenu overflowMenu__hidden" id="{{ $position }}">--}}
 
             {{--<div>--}}
-                {{--<span><a href="{{ route('link1A') }}">Domestic Transportation</a></span>--}}
+                {{--<span><a href="{{ route('domesticTransportation') }}">Domestic Transportation</a></span>--}}
             {{--</div>--}}
 
         {{--</div>--}}

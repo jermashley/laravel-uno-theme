@@ -44,7 +44,7 @@
 
                     <div class="nav-links">
 
-                        @include('uno-theme::navLinks', ['position'=>'navigation'])
+                        @include('navLinks', ['position'=>'navigation'])
 
                     </div>
 
@@ -82,7 +82,7 @@
 
             <div class="footer-links">
 
-                @include('uno-theme::navLinks', ['position'=>'footer'])
+                @include('navLinks', ['position'=>'footer'])
 
             </div>
 
