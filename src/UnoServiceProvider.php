@@ -52,7 +52,7 @@ class UnoServiceProvider extends ServiceProvider
         ], 'webpack');
 
 		$this->publishes([
-            $navigation => resources_path('views'),
+            $navigation => resource_path('views'),
         ], 'navigation');
 
 	}
