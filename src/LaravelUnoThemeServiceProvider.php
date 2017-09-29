@@ -4,7 +4,7 @@ namespace Jermashley;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelUnoTheme extends ServiceProvider
+class LaravelUnoThemeServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
