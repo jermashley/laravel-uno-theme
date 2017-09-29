@@ -1,0 +1,38 @@
+$font-family-sans-serif: 'Muli';
+
+// Basic Color
+$white: #ffffff;
+$black: #000000;
+$red: #c62828;
+$orange: #e17e3d;
+$yellow: #e5d335;
+$green: #2e7d32;
+$blue: #1565c0;
+$teal: #5bc0de;
+$pink: #ff5b77;
+$purple: #613d7c;
+
+// Create greyscale
+$grey-dark: #232323;
+$grey: #555555;
+$grey-light: #c8c8c8;
+$grey-lighter: #dcdcdc;
+$grey-lightest: #f0f0f0;
+
+// Branding
+$text-primary: #32424b;
+$default-background: #32424b;
+
+
+// Transition
+$transition-350: 350ms ease-in-out;
+$transition-500: 500ms ease-in-out;
+
+
+$border-radius: .5rem;
+
+$drop-shadow__none: drop-shadow(0rem 0rem 0rem rgba($default-background, 0));
+
+$drop-shadow__static: drop-shadow(0rem .125rem 0.0625rem rgba($default-background, .15));
+
+$drop-shadow__hover: drop-shadow(0rem .65rem .9rem rgba($default-background, .25));
