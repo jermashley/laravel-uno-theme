@@ -4,7 +4,7 @@
 
         <div class="bgImage">
 
-            <img src="{{ $largeCardImage }}" alt="{{ $largeCardImageAlt }}">
+            <img src="{{ $largeCardImage }}" class="{{ $largeCardImageClass }}" alt="{{ $largeCardImageAlt }}">
 
         </div>
 
