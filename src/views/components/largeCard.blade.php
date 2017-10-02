@@ -10,7 +10,7 @@
 
         <div class="baseCard__heading large">
 
-            <span>{{ $largeCardHeding }}</span>
+            <span>{{ $largeCardHeading }}</span>
 
         </div>
 
