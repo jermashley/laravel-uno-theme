@@ -17,7 +17,7 @@
         <header>
 
             <div class="header__coverImage">
-                <img src="{{ asset('images/hero-background.jpg') }}" class="" alt="">
+                <img src="{{ asset('images/common/hero-background.jpg') }}" class="" alt="">
             </div>
 
             <nav >
@@ -28,11 +28,11 @@
 
                         @if (\Route::is('home'))
 
-                            <a href="{{ route('home') }}" class="logoLink"><img src="{{ asset('images/header-logo-light.png') }}" style="display: none;"></a>
+                            <a href="{{ route('home') }}" class="logoLink"><img src="{{ asset('images/common/header-logo-light.png') }}" style="display: none;"></a>
 
                         @else
 
-                            <a href="{{ route('home') }}" class="logoLink"><img src="{{ asset('images/header-logo-light.png') }}" alt=""></a>
+                            <a href="{{ route('home') }}" class="logoLink"><img src="{{ asset('images/common/header-logo-light.png') }}" alt=""></a>
 
                         @endif
 
