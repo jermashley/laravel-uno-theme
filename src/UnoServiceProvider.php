@@ -62,7 +62,7 @@ class UnoServiceProvider extends ServiceProvider
         ], 'home');
 
 		$this->publishes([
-		    $components => resource_path('views/'),
+		    $components => resource_path('views/components'),
         ], 'components');
 
 	}
