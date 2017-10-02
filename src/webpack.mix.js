@@ -16,5 +16,5 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .version();
 
 mix.copy('resources/assets/fonts/', 'public/fonts', false)
-    .copy('resources/assets/images/*/*.**', 'public/images')
+    .copy('resources/assets/images/', 'public/images', false)
     .copy('resources/assets/video/*', 'public/video');
