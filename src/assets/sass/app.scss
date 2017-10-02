@@ -1,6 +1,3 @@
-// Variables
-@import "variables";
-
 // Fonts
 @import "resources/assets/sass/fontawesome-5.0.0-beta7/scss/fontawesome-pro-core";
 @import "resources/assets/sass/fontawesome-5.0.0-beta7/scss/fontawesome-pro-brands";
@@ -12,12 +9,5 @@
 // Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";
 
-// Custom
-@import "layout";
-@import "navigation";
-@import "home";
-@import "contact";
-
-// Utilities
-@import "utilities";
-@import "node_modules/featherlight/src/featherlight";
+// Laravel Uno Theme
+@import "laravel-uno-theme/app";
