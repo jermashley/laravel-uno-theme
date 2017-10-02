@@ -23,6 +23,7 @@ class UnoServiceProvider extends ServiceProvider
 		$webpack = realpath(__DIR__ . '/webpack.mix.js');
 		$navigation = realpath(__DIR__ . '/views/nav/navLinks.blade.php');
 		$home = realpath(__DIR__ . '/views/home/index.blade.php');
+		$components = realpath(__DIR__ . '/views/components');
 
 		$this->loadRoutesFrom($routes);
 
@@ -59,6 +60,10 @@ class UnoServiceProvider extends ServiceProvider
 		$this->publishes([
 		    $home => resource_path('views/home/index.blade.php'),
         ], 'home');
+
+		$this->publishes([
+		    $components => resource_path('views/'),
+        ], 'components');
 
 	}
 }
