@@ -539,27 +539,28 @@ body {
 		margin-top: 1.5rem;
 		margin-bottom: 1.5rem;
 	}
-    .generalList {
-        width: 100%;
-        list-style: none;
-        color: $text-primary;
-        font-size: 1.35rem;
-        font-weight: 400;
-        &.badge {
-            li:before {
-                content: '\f335';
-                width: .95rem;
-                height: .95rem;
-                font-family: 'FontAwesome';
-                font-size: 1.25rem;
-                font-weight: 900;
-                margin-right: 1.05rem;
-            }
+}
+
+.generalList {
+    width: auto;
+    list-style: none;
+    color: $text-primary;
+    font-size: 1.35rem;
+    font-weight: 400;
+    &.clover {
+        li:before {
+            content: '\f335';
+            width: .95rem;
+            height: .95rem;
+            font-family: 'FontAwesome';
+            font-size: 1.25rem;
+            font-weight: 900;
+            margin-right: 1.05rem;
         }
-        li {
-            margin: 1.65rem 0;
-            text-align: left;
-        }
+    }
+    li {
+        margin: 1.65rem 0;
+        text-align: left;
     }
 }
 
