@@ -234,7 +234,7 @@ body {
     .content__splashImage {
         width: 100%;
         min-height: 22.5rem;
-        margin: 2.5rem 0;
+        margin: 5.75rem 0;
 		padding: 0 2.5rem;
         position: relative;
         overflow: hidden;
@@ -245,7 +245,7 @@ body {
         align-items: center;
         text-align: center;
         color: $white;
-        div {
+        div.imageBg {
             z-index: -100;
             position: absolute;
             top: 0;
