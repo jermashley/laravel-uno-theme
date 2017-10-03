@@ -562,6 +562,11 @@ body {
             content: '\f335';
         }
     }
+    &.right-arrow-circle {
+        li:before {
+            content: '\f0a9';
+        }
+    }
     li {
         margin: 1.65rem 0;
         text-align: left;
