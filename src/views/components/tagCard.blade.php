@@ -1,4 +1,4 @@
-<div class="tagCard animated small">
+<div class="baseCard animated small">
 
     <a href="{{ $tagCardLink }}" class="baseCard__link">
 
