@@ -208,7 +208,7 @@ body {
         width: 100%;
     }
 	a.contentLink {
-        display: inline-block;
+        display: inline;
         font-weight: 700;
         color: lighten($text-primary, 25%);
         transition: $transition-350;
