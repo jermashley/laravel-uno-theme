@@ -547,15 +547,19 @@ body {
     color: $text-primary;
     font-size: 1.35rem;
     font-weight: 400;
-    &.clover {
+    &.styled {
         li:before {
-            content: '\f335';
             width: .95rem;
             height: .95rem;
             font-family: 'FontAwesome';
             font-size: 1.25rem;
             font-weight: 900;
             margin-right: 1.05rem;
+        }
+    }
+    &.clover {
+        li:before {
+            content: '\f335';
         }
     }
     li {
