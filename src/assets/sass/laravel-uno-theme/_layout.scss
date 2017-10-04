@@ -18,10 +18,10 @@
 
 body {
     width: 100%;
-	min-height: 100vh;
+    min-height: 100vh;
     position: relative;
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -36,9 +36,9 @@ body {
 }
 
 * {
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .nav__overflow {
@@ -207,7 +207,7 @@ body {
     @media only screen and (max-width: 1260px) {
         width: 100%;
     }
-	a.contentLink {
+    a.contentLink {
         display: inline;
         font-weight: 700;
         color: lighten($text-primary, 25%);
@@ -218,7 +218,7 @@ body {
             background-image: linear-gradient(transparent 45%, rgba($text-primary, .15) 45%, rgba($text-primary, .15) 85%, transparent 85%, transparent 100%);
             background-image: -webkit-linear-gradient(transparent 45%, rgba($text-primary, .15) 45%, rgba($text-primary, .15) 85%, transparent 85%, transparent 100%);
         }
-	}
+    }
     .page__title {
         text-align: center;
         font-size: 4rem;
@@ -227,7 +227,7 @@ body {
     .page__subTitle {
         text-align: center;
         font-size: 1.5rem;
-		line-height: 2.75rem;
+        line-height: 2.75rem;
         font-weight: 700;
         margin: 2rem 0;
     }
@@ -235,7 +235,7 @@ body {
         width: 100%;
         min-height: 22.5rem;
         margin: 5.75rem 0;
-		padding: 0 2.5rem;
+        padding: 0 2.5rem;
         position: relative;
         overflow: hidden;
         border-radius: $border-radius;
@@ -402,13 +402,13 @@ body {
                 padding-right: 2rem;
             }
         }
-		.block__image {
-			width: 100%;
-			height: 24rem;
-			margin: 1.5rem 0;
-			position: relative;
-			display: flex;
-			flex-direction: column;
+        .block__image {
+            width: 100%;
+            height: 24rem;
+            margin: 1.5rem 0;
+            position: relative;
+            display: flex;
+            flex-direction: column;
             justify-content: flex-end;
             overflow: hidden;
             border-radius: $border-radius;
@@ -419,16 +419,16 @@ body {
                 filter: $drop-shadow__hover;
                 cursor: pointer;
             }
-			img {
-				z-index: -100;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
+            img {
+                z-index: -100;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
                 &.top {
                     object-position: center top;
                 }
@@ -438,13 +438,13 @@ body {
                 &.bottom {
                     object-position: center bottom;
                 }
-			}
-			.image__imageText {
-				width: 100%;
-				min-height: 5rem;
-				padding: 1rem;
-				background-color: rgba($default-background, .75);
-				color: $white;
+            }
+            .image__imageText {
+                width: 100%;
+                min-height: 5rem;
+                padding: 1rem;
+                background-color: rgba($default-background, .75);
+                color: $white;
                 border-radius: 0 0 $border-radius $border-radius;
                 transition: $transition-350;
                 &.tucked {
@@ -452,7 +452,7 @@ body {
                 }
                 span.heading {
                     display: block;
-					width: 100%;
+                    width: 100%;
                     font-size: 1.1rem;
                     font-weight: 800;
                     text-transform: uppercase;
@@ -462,12 +462,12 @@ body {
                 span.text {
                     display: block;
                     font-size: 1rem;
-            		line-height: 1.75rem;
-            		font-weight: 400;
+                    line-height: 1.75rem;
+                    font-weight: 400;
                     margin: .75rem 0 0 0;
                 }
-			}
-		}
+            }
+        }
         .block__quote {
             width: 100%;
             margin: 1.5rem 0;
@@ -532,13 +532,13 @@ body {
             }
         }
     }
-	p {
+    p {
         font-size: 1.3rem;
         font-weight: 300;
         line-height: 2.5rem;
-		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .generalList {
@@ -574,14 +574,14 @@ body {
 }
 
 .content__peopleCard {
-	width: 20rem;
-	height: auto;
+    width: 20rem;
+    height: auto;
     margin: 1rem .5rem;
     padding: 2rem 1.5rem;
-	background-color: $white;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     overflow: hidden;
     border-radius: $border-radius;
     border: 0.0625rem solid $grey-lightest;
@@ -590,20 +590,20 @@ body {
     &:hover {
         filter: $drop-shadow__hover;
     }
-	.peopleCard__avatar {
+    .peopleCard__avatar {
         width: 16rem;
         height: 16rem;
-		align-self: center;
-		margin: 0;
-		overflow: hidden;
-		border-radius: 100%;
-		position: relative;
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
+        align-self: center;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 100%;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     .peopleCard__headings {
         margin-top: 1.5rem;
         span {
@@ -631,6 +631,7 @@ body {
 }
 
 .bgImage {
+    position: relative;
     overflow: hidden;
     img {
         width: 100%;
@@ -745,6 +746,25 @@ body {
             color: inherit;
         }
     }
+    &__meta {
+        z-index: 1000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: .35rem .5rem;
+        background: rgba($default-background, .75);
+        .meta {
+            display: block;
+            width: 100%;
+            font-size: .95rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            color: $white;
+        }
+    }
     &__heading {
         &.large {
             line-height: 1.75rem;
@@ -753,10 +773,14 @@ body {
             text-align: center;
         }
         &.blog {
-            line-height: 2.5rem;
-            font-size: 1.75rem;
+            line-height: 2.15rem;
+            font-size: 1.35rem;
             font-weight: 700;
             text-align: center;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &.small {
             line-height: 1.5rem;

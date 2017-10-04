@@ -6,6 +6,10 @@
 
             <img src="{{ $blogCardImage }}" class="{{ $blogCardImageClass or ' ' }}" alt="{{ $blogCardImageAlt  or ' ' }}">
 
+            <div class="baseCard__meta">
+                <span class="meta">{{ $blogCardMeta }}</span>
+            </div>
+
         </div>
 
         <div class="baseCard__heading blog">
