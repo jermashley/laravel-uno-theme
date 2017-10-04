@@ -1,0 +1,18 @@
+.blog {
+    &__content {
+        .blogSubHeadings {
+            display: block;
+            font-size: 1.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 2.5rem 0 .85rem;
+        }
+        .blogText {
+            display: block;
+            font-size: 1.35rem;
+            line-height: 2.15rem;
+            font-weight: 300;
+            margin: 0 0 1.5rem;
+        }
+    }
+}
