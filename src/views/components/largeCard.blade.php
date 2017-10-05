@@ -26,7 +26,7 @@
 
         <div class="baseCard__more">
 
-            <span>Read More</span>
+            <span>{{ $largeCardAction or 'Read More' }}</span>
 
         </div>
 
