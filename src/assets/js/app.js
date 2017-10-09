@@ -7,4 +7,4 @@
 
 require('./bootstrap');
 
-require('./laravel-uno-theme');
+require('./laravel-uno-theme/laravel-uno-theme');
