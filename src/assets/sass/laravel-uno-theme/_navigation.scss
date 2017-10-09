@@ -149,24 +149,14 @@
                 height: auto;
                 margin: 0;
                 padding: 0;
-                background: $text-primary;
-                // border: .125rem solid $text-primary;
+                background: lighten($default-background, 25%);
                 border-radius: .25rem;
                 color: $white;
-                // transition: $transition-350;
                 &__hidden {
                     display: none;
                 }
                 @media only screen and (max-width: 1024px) {
                     display: none;
-                    // z-index: 0;
-                    // position: relative;
-                    // width: 100%;
-                    // background-color: rgba($white, 0);
-                    // border: none;
-                    // border-radius: 0;
-                    // margin: 1rem 0;
-                    // color: $white;
                 }
                 div {
                     display: flex;
@@ -203,20 +193,6 @@
                         }
                     }
                 }
-                // &::before {
-                //     z-index: 900;
-                //     content: '\f0d8';
-                //     font-family: FontAwesome;
-                //     color: $text-primary;
-                //     font-size: 2.5rem;
-                //     position: absolute;
-                //     top: -2.4rem;
-                //     left: 50%;
-                //     transform: translateX(-50%);
-                //     @media only screen and (max-width: 1024px) {
-                //         display: none;
-                //     }
-                // }
             }
         }
     }
