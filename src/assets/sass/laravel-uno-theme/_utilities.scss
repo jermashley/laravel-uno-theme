@@ -30,6 +30,7 @@
         background: lighten($blue, 20%);
         border: 0.0625rem solid rgba($blue, .15);
         &:hover {
+            color: $white;
             background: lighten($blue, 10%);
             border: 0.0625rem solid rgba($blue, .25);
         }
