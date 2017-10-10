@@ -1,10 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
 .btn {
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto .5rem;
     padding: .5rem 1.5rem;
     font-size: .95rem;
     font-weight: 700;
     text-transform: uppercase;
+    text-decoration: none;
+    filter: drop-shadow(0 .0625rem .125rem rgba($grey-dark, .1));
+    border: 0.0625rem solid $grey;
+    border-radius: $border-radius;
+    background: $grey;
+    color: $white;
+    transition: $transition-350;
     &:hover {
+        filter: drop-shadow(0 .25rem .5rem rgba($grey-dark, .25));
         cursor: pointer;
+    }
+    &__primary {
+        background: lighten($blue, 20%);
+        border: 0.0625rem solid rgba($blue, .15);
+        &:hover {
+            background: lighten($blue, 10%);
+            border: 0.0625rem solid rgba($blue, .25);
+        }
     }
 }
 
