@@ -166,6 +166,9 @@ form {
                 background-color: rgba($grey-lightest, .75);
             }
             input, textarea {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
                 min-height: 4rem;
                 width: 100%;
                 flex-grow: 1;
