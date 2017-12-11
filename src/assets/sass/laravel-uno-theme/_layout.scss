@@ -43,7 +43,6 @@ body {
 
 .nav__overflow {
     overflow: hidden;
-    position: fixed;
 }
 
 #app {
@@ -656,7 +655,6 @@ body {
 .bgImage {
     position: relative;
     overflow: hidden;
-    width: 100%;
     img {
         width: 100%;
         height: 100%;
@@ -700,12 +698,13 @@ body {
     overflow: hidden;
     border-radius: $border-radius;
     filter: $drop-shadow__static;
-    transition: $transition-350;
+    transition: $transition-500;
     &.animated {
         &:hover {
-            transform: translateY(-.5rem);
+            transform: translateY(-1px);
             filter: $drop-shadow__hover;
             cursor: pointer;
+            transition: $transition-150;
         }
     }
     &.tag {

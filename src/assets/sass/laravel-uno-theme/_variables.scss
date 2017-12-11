@@ -25,8 +25,12 @@ $default-background: #32424b;
 
 
 // Transition
+$transition-150: 150ms ease-in-out;
+$transition-250: 250ms ease-in-out;
 $transition-350: 350ms ease-in-out;
 $transition-500: 500ms ease-in-out;
+$transition-750: 750ms ease-in-out;
+$transition-1000: 1000ms ease-in-out;
 
 
 $border-radius: .5rem;
@@ -35,4 +39,4 @@ $drop-shadow__none: drop-shadow(0rem 0rem 0rem rgba($default-background, 0));
 
 $drop-shadow__static: drop-shadow(0rem .125rem 0.0625rem rgba($default-background, .15));
 
-$drop-shadow__hover: drop-shadow(0rem .65rem .9rem rgba($default-background, .25));
+$drop-shadow__hover: drop-shadow(0rem .175rem .125rem rgba($default-background, .25));

@@ -1,165 +1,117 @@
-* {
-    box-sizing: border-box;
-}
-
-.btn {
-    -webkit-font-smoothing: antialiased;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto .5rem;
-    padding: .5rem 1.5rem;
-    font-size: .95rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    filter: drop-shadow(0 .0625rem .125rem rgba($grey-dark, .1));
-    border: 0.0625rem solid $grey;
-    border-radius: $border-radius;
-    background: $grey;
-    color: $white;
-    transition: $transition-350;
-    &:hover {
-        filter: drop-shadow(0 .25rem .5rem rgba($grey-dark, .25));
+// Breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1600px
+  );
+  
+  $container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl:1500px
+  );
+  
+  $grid-columns: 12;
+  $grid-gutter-width-base: 30px;
+  $grid-gutter-widths: (
+    xs: $grid-gutter-width-base,
+    sm: $grid-gutter-width-base,
+    md: $grid-gutter-width-base,
+    lg: $grid-gutter-width-base,
+    xl: $grid-gutter-width-base,
+    xxl: $grid-gutter-width-base
+  );
+  
+  
+  // Spacers
+  $spacer: 1rem;
+  $spacer-x: $spacer;
+  $spacer-y: $spacer;
+  
+  $spacers: (
+    0: (
+      x: 0,
+      y: 0
+    ),
+    1: (
+      x: $spacer-x,
+      y: $spacer-y
+    ),
+    2: (
+      x: ($spacer-x * 1.5),
+      y: ($spacer-y * 1.5)
+    ),
+    3: (
+      x: ($spacer-x * 3),
+      y: ($spacer-y * 3)
+    ),
+    4: (
+      x: ($spacer-x * 4.5),
+      y: ($spacer-y * 4.5)
+    ),
+    5: (
+      x: ($spacer-x * 6),
+      y: ($spacer-y * 6)
+    ),
+    6: (
+      x: ($spacer-x * 7.5),
+      y: ($spacer-y * 7.5)
+    ),
+    10: (
+      x: ($spacer-x * 10),
+      y: ($spacer-y * 10)
+    )
+  );
+  
+  .btn {
+      padding: .5rem 1.5rem;
+      font-size: .95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      &:hover {
         cursor: pointer;
-    }
-    &__primary {
-        background: lighten($blue, 20%);
-        border: 0.0625rem solid rgba($blue, .15);
-        &:hover {
-            color: $white;
-            background: lighten($blue, 10%);
-            border: 0.0625rem solid rgba($blue, .25);
-        }
-    }
-}
-
-
-.d-flex {
-    display: flex;
-    &.flex-row {
-        flex-direction: row;
-    }
-    &.flex-column {
-        flex-direction: column;
-    }
-    &.flex-wrap {
-        flex-wrap: wrap;
-    }
-    &.flex-no-wrap {
-        flex-wrap: nowrap;
-    }
-    &.justify-content-center {
-        justify-content: center;
-    }
-    &.justify-content-around {
-        justify-content: space-around;
-    }
-    &.justify-content-between {
-        justify-content: space-between;
-    }
-    &.justify-content-start {
-        justify-content: flex-start;
-    }
-    &.justify-content-end {
-        justify-content: flex-end;
-    }
-    &.justify-content-evenly {
-        justify-content: space-evenly;
-    }
-    &.align-items-start {
-        align-items: flex-start;
-    }
-    &.align-items-end {
-        align-items: flex-end;
-    }
-    &.align-items-center {
-        align-items: center;
-    }
-    &.align-items-stretch {
-        align-items: stretch;
-    }
-    &.align-items-baseline {
-        align-items: baseline;
-    }
-    // Only for children of d-flex
-    .align-self-start {
-        align-self: flex-start;
-    }
-    .align-self-end {
-        align-self: flex-end;
-    }
-    .align-self-center {
-        align-self: center;
-    }
-    .align-self-stretch {
-        align-self: stretch;
-    }
-    .align-self-baseline {
-        align-self: baseline;
-    }
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.ml-2 {
-    margin-left: .5rem;
-}
-
-.mt-3 {
-    margin-top: 1rem;
-}
-
-.mt-4 {
-    margin-top: 1.5rem;
-}
-
-.mt-5 {
-    margin-top: 3rem;
-}
-
-.mb-5 {
-    margin-bottom: 3rem;
-}
-
-.overflowHidden {
+      }
+  }
+  
+  .overflowHidden {
     overflow: hidden;
-}
-
-.truncate {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.hidden {
+  }
+  
+  .truncate {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  
+  .hidden {
     display: none;
     transition: $transition-350;
-}
-
-
-.checker-red {
-    border: 1px solid red;
-}
-
-.checker-green {
-    border: 1px solid lime;
-}
-
-.checker-blue {
-    border: 1px solid blue;
-}
-
-.fa {
-    transition: $transition-350;
-}
-
-label {
+  }
+  
+  
+  .checker-red {
+      border: 1px solid red;
+  }
+  
+  .checker-green {
+      border: 1px solid lime;
+  }
+  
+  .checker-blue {
+      border: 1px solid blue;
+  }
+  
+  svg.svg-inline--fa {
+      margin: 0 .5rem 0 0;
+      transition: $transition-350;
+  }
+  
+  label {
     margin-bottom: 0;
-}
+  }
+  
