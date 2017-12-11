@@ -73,8 +73,11 @@ $grid-breakpoints: (
       font-size: .95rem;
       font-weight: 700;
       text-transform: uppercase;
+      transition: $transition-500;
       &:hover {
+        transform: translateY(-1px);      
         cursor: pointer;
+        transition: $transition-250;
       }
   }
   
