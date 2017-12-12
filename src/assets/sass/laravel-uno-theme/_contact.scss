@@ -130,7 +130,7 @@ form {
                 text-transform: uppercase;
                 white-space: nowrap;
                 color: rgba($text-primary, .75);
-                background-color: rgba($grey-lightest, .75);
+                background-color: rgba($grey-lighter, .85);
             }
             .labelRadio {
                 min-height: 4rem;
@@ -166,23 +166,18 @@ form {
                 background-color: rgba($grey-lightest, .75);
             }
             input, textarea {
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
                 min-height: 4rem;
                 width: 100%;
                 flex-grow: 1;
-                margin: 0;
                 padding: .5rem 1rem;
                 font-size: 1.35rem;
                 font-weight: 500;
                 color: $text-primary;
                 outline: none;
-                border: 0.0625rem solid darken($grey-lightest, 2%);
-                background: rgba($grey-lightest, .25);
+                border: 0.0625rem solid rgba($grey-lighter, .85);
                 transition: $transition-350;
                 &:focus {
-                    border: 0.0625rem solid rgba($blue, .15);
+                    border: 0.0625rem solid rgba($blue, .25);
                     background-color: rgba($grey-lightest, .15);
                 }
                 &::placeholder {
