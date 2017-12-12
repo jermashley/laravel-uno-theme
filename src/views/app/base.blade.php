@@ -80,12 +80,6 @@
 
         <footer>
 
-            <div class="footer-links">
-
-                @include('nav.navLinks', ['position'=>'footer'])
-
-            </div>
-
             <div class="footer-content">
 
                 <span>Flat World Holdings</span>
