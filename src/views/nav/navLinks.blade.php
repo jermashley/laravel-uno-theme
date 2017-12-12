@@ -1,6 +1,6 @@
 <div class="parentMenu {{ Route::is(['link1', '']) ? 'current' : '' }}">
 
-    <a href="{{ route('link1') }}">Link 1</a>
+    <a href="javascript:void(0)" class="parentLink" data-link="{{ route('/') }}">Link 1 <span style="margin-left: .75rem;"><i class="fa fa-caret-down"></i></span></a>
 
     {{--@if ($position == 'navigation')--}}
         {{--<div class="overflowMenu overflowMenu__hidden" id="{{ $position }}">--}}
