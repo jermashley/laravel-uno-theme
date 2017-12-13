@@ -1,16 +1,14 @@
 <div class="parentMenu {{ Route::is(['link1', '']) ? 'current' : '' }}">
 
-    <a href="javascript:void(0)" class="parentLink" data-link="{{ route('/') }}">Link 1 <span style="margin-left: .75rem;"><i class="fa fa-caret-down"></i></span></a>
-
-    {{--@if ($position == 'navigation')--}}
-        {{--<div class="overflowMenu overflowMenu__hidden" id="{{ $position }}">--}}
+    <a href="javascript:void(0)" class="parentLink" data-link="{{ route('/') }}">Link 1<i class="fa fa-caret-down ml-2"></i></span></a>
+    
+        {{--<div class="overflowMenu overflowMenu__hidden">--}}
 
             {{--<div>--}}
                 {{--<span><a href="{{ route('domesticTransportation') }}">Domestic Transportation</a></span>--}}
             {{--</div>--}}
 
         {{--</div>--}}
-    {{--@endif--}}
 
 </div>
 
