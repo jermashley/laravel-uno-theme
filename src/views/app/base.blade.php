@@ -28,7 +28,7 @@
 
                         @if (\Route::is('home'))
 
-                            <a href="{{ route('home') }}" class="logoLink"><img src="{{ asset('images/common/header-logo-light.png') }}" style="display: none;"></a>
+                            
 
                         @else
 
