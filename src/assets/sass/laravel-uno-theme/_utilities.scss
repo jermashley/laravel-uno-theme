@@ -21,11 +21,12 @@
     border-radius: $border-radius;
     background: $grey;
     color: $white;
-    transition: $transition-350;
+    transition: $transition-500;
     &:hover {
         transform: translateY(-1px);
         filter: drop-shadow(0 .25rem .5rem rgba($grey-dark, .25));
         cursor: pointer;
+        transition: $transition-250;
     }
     &__primary {
         background: lighten($blue, 20%);
