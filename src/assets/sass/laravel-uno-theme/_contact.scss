@@ -244,13 +244,16 @@ form {
             color: rgba($text-primary, .5);
             outline: none;
             border: 0.0625rem solid $grey-lighter;
+            border-radius: $border-radius;
             background: rgba($grey-lightest, .15);
-            transition: $transition-350;
+            overflow: hidden;
+            transition: $transition-500;
             &:hover {
                 color: rgba($text-primary, .65);
                 border: 0.0625rem solid $grey-light;
                 background: rgba($grey-lightest, .5);
                 cursor: pointer;
+                transition: $transition-250;
             }
             &.success {
                 transition: $transition-350;
