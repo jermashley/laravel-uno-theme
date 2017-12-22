@@ -30,11 +30,19 @@
     .contactInfo {
         display: flex;
         flex-direction: column;
-        margin: .5rem 0;
+        margin: 1.5rem 0 .5rem;
         font-size: 1.35rem;
         font-weight: 600;
         span {
-            margin: .35rem 0;
+            margin: .5rem 0;
+        }
+        svg {
+            width: 1.5rem;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0 .45rem 0 0;
         }
     }
     iframe {
@@ -320,5 +328,4 @@ form {
             transition: $transition-350;
         }
     }
-
 }
