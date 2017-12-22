@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+.text {
+    &.left {
+        text-align: left;
+    }
+    &.center {
+        text-align: center;
+    }
+    &.right {
+        text-align: right;
+    }
+}
+
 a.link {
     display: inline-block;
     text-decoration: none;
