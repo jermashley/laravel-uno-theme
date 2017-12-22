@@ -2,6 +2,26 @@
     box-sizing: border-box;
 }
 
+a.link {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    color: lighten($blue, 20%);
+    font-weight: 600;
+    transition: $transition-500;
+    &:hover {
+        text-decoration: none;
+        border: none;
+        color: lighten($blue, 10%);
+        transition: $transition-250;
+    }
+    &:visited {
+        text-decoration: none;
+        border: none;
+        color: lighten($purple, 10%);
+    }
+}
+
 .btn {
     -webkit-font-smoothing: antialiased;
     -webkit-appearance: none;
