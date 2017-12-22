@@ -1,4 +1,15 @@
 .contact {
+    > div {
+        @media screen and (max-width: 768px) {
+            margin: 1.5rem 0    !important;
+            padding: 0 1.75rem   !important;
+            &:nth-child(even) {
+                border-top: 1px solid $grey-lighter;
+                border-bottom: 1px solid $grey-lighter;
+                background-color: rgba($grey-lightest, .25);
+            }
+        }
+    }
     &.contact__response {
         min-height: 30rem;
         display: flex;
