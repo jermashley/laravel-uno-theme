@@ -1,6 +1,6 @@
 <div class="baseCard animated large">
 
-    <a href="{{ $largeCardLink }}" class="baseCard__link">
+    <a href="{{ $largeCardLink }}" target="{{ $largeCardTarget or '_self' }}" class="baseCard__link">
 
         <div class="bgImage">
 
