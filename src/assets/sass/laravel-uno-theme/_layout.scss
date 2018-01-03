@@ -582,25 +582,20 @@ body {
     list-style: none;
     color: $text-primary;
     font-size: 1.35rem;
-    font-weight: 400;
     &.styled {
-        li:before {
+        li::before {
+            display: inline-block;
+            content: '\f105';
             width: .95rem;
             height: .95rem;
-            font-family: 'FontAwesome';
-            font-size: 1.25rem;
+            font-family: 'Font Awesome 5';
+            font-style: normal;
             font-weight: 900;
+            font-size: 1.25rem;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
             margin-right: 1.05rem;
-        }
-    }
-    &.clover {
-        li:before {
-            content: '\f335';
-        }
-    }
-    &.right-arrow-circle {
-        li:before {
-            content: '\f0a9';
         }
     }
     li {
