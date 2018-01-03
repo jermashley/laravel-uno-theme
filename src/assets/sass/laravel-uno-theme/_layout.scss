@@ -448,12 +448,14 @@ body {
             justify-content: flex-end;
             overflow: hidden;
             border-radius: $border-radius;
+            transform: translateY(0);
             filter: $drop-shadow__static;
-            transition: $transition-350;
+            transition: $transition-500;
             &:hover {
-                transform: translateY(-.5rem);
+                transform: translateY(-1px);
                 filter: $drop-shadow__hover;
                 cursor: pointer;
+                transition: $transition-250;
             }
             img {
                 z-index: -100;
@@ -481,7 +483,7 @@ body {
                 padding: 1rem;
                 background-color: rgba($default-background, .75);
                 color: $white;
-                border-radius: 0 0 $border-radius $border-radius;
+                // border-radius: 0 0 $border-radius $border-radius;
                 transition: $transition-350;
                 &.tucked {
                     transform: translateY(calc(100% - 3.6rem));
