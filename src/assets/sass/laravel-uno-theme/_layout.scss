@@ -212,15 +212,36 @@ body {
         width: 100%;
     }
     a.contentLink {
-        display: inline;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0;
+        padding: 2px 3px;
         font-weight: 700;
         color: lighten($text-primary, 25%);
+        text-decoration: none;
         transition: $transition-350;
+        &::after {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 25%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba($text-primary, .15);
+            transition: $transition-350;
+        }
         &:hover {
-            color: lighten($text-primary, 20%);
+            color: lighten($text-primary, 18%);
             text-decoration: none;
-            background-image: linear-gradient(transparent 45%, rgba($text-primary, .15) 45%, rgba($text-primary, .15) 85%, transparent 85%, transparent 100%);
-            background-image: -webkit-linear-gradient(transparent 45%, rgba($text-primary, .15) 45%, rgba($text-primary, .15) 85%, transparent 85%, transparent 100%);
+            transition: $transition-150;
+            &::after {
+                height: 100%;
+                transition: $transition-150;
+            }
         }
     }
     .page__title {
