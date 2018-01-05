@@ -246,6 +246,9 @@ body {
                 transition: $transition-150;
             }
         }
+        svg {
+            margin: 3px;
+        }
     }
     .page__title {
         text-align: center;
