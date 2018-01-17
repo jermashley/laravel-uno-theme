@@ -1,0 +1,49 @@
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    transition: $transition-350;
+    &.hidden{
+        opacity: 0;
+        transition: $transition-350;
+    }
+    .closeModal {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        margin: 0;
+        padding: 0;
+        font-size: 2.5rem;
+        color: rgba($white, .65);
+        transition: $transition-350;
+        &:hover {
+            color: rgba($white, .9);
+            cursor: pointer;
+        }
+    }
+    &.darkBg {
+        background: rgba($default-background, .97);
+    }
+    .baseCard {
+        margin-top: 6.5rem;
+        align-self: flex-start;
+    }
+    header {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+}

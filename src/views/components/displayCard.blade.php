@@ -1,4 +1,4 @@
-<div class="card {{ $cardSize }} {{ $leadImageLocation or '' }} {{ $hasShadow or '' }} {{ $isAnimated or '' }}">
+<div class="card {{ $cardSize }} {{ $leadImageLocation or '' }} {{ $hasShadow or '' }} {{ $isAnimated or '' }} {{ $cardClasses }}" @unless (empty($cardId)) id="{{ $cardId }}" @endunless>
 
     @unless (empty($hasLeadImage))
     <div class="lead">
@@ -43,14 +43,10 @@
         @unless (empty($hasFooter))
         <span class="cardContent__footer">
             @component('components.socialIcons', [
-                'linkedin' => '$linkedin',
-                'linkedinLink' => '$linkedinLink',
-                'twitter' => '$twitter',
-                'twitterLink' => '$twitterLink',
-                'facebook' => '$facebook',
-                'facebookLink' => '$facebookLink',
-                'instagram' => '$instagram',
-                'instagramLink' => '$instagramLink'
+                'linkedin' => $linkedin,
+                'twitter' => $twitter,
+                'facebook' => $facebook,
+                'instagram' => $instagram
             ])
             @endcomponent
         </span>
