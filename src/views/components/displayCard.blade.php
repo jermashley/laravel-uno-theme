@@ -42,12 +42,30 @@
 
         @unless (empty($hasFooter))
         <span class="cardContent__footer">
-            @component('components.socialIcons', [
-                'linkedin' => $linkedin,
-                'twitter' => $twitter,
-                'facebook' => $facebook,
-                'instagram' => $instagram
-            ])
+            @component('components.socialIcons')
+                @unless (empty($linkedin))
+                    @slot('linkedin')
+                        {{ $linkedin }}
+                    @endslot
+                @endunless
+
+                @unless (empty($twitter))
+                    @slot('twitter')
+                        {{ $twitter }}
+                    @endslot
+                @endunless
+
+                @unless (empty($facebook))
+                    @slot('facebook')
+                        {{ $facebook }}
+                    @endslot
+                @endunless
+
+                @unless (empty($instagram))
+                    @slot('instagram')
+                        {{ $instagram }}
+                    @endslot
+                @endunless
             @endcomponent
         </span>
         @endunless
