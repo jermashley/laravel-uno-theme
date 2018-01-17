@@ -1,0 +1,27 @@
+// Helper Mixins
+@mixin setFlex($flex-direction, $flex-wrap, $flex-grow, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    flex-grow: $flex-grow;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+// Shadows 
+@mixin boxShadow($xOffset, $yOffset, $blur, $spread, $color) {
+    box-shadow: $xOffset $yOffset $blur $spread $color;
+}
+
+@mixin boxShadowNone () {
+    box-shadow: $box-shadow__none;
+}
+
+@mixin boxShadowStatic () {
+    box-shadow: $box-shadow__static;
+}
+
+@mixin boxShadowHover () {
+    box-shadow: $box-shadow__hover;
+}

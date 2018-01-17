@@ -1,6 +1,10 @@
 // Variables
 @import "variables";
 
+
+// Mixins
+@import "mixins";
+
 //Fonts
 @import "fonts";
 
@@ -10,6 +14,7 @@
 @import "home";
 @import "contact";
 @import "blog";
+@import "components/components";
 
 // Utilities
 @import "utilities";

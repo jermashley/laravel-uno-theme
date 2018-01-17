@@ -18,14 +18,22 @@ a.link {
     display: inline-block;
     text-decoration: none;
     border: none;
-    color: lighten($blue, 20%);
     font-weight: 600;
     transition: $transition-500;
-    &:hover, &:visited {
+    &:link {
+        color: lighten($blue, 20%);
+    }
+    &:hover {
         text-decoration: none;
         border: none;
-        color: lighten($blue, 10%);
+        color: lighten($text-primary, 5%);
         transition: $transition-250;
+    }
+    &:visited {
+        color: lighten($red, 5%);
+    }
+    &:active {
+        color: lighten($text-primary, 5%);
     }
 }
 
