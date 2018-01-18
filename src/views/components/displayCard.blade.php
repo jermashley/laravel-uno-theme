@@ -1,4 +1,4 @@
-<div class="card {{ $cardSize }} {{ $leadImageLocation or '' }} {{ $hasShadow or '' }} {{ $isAnimated or '' }} {{ $cardClasses }}" @unless (empty($cardId)) id="{{ $cardId }}" @endunless>
+<div class="card {{ $cardSize }} {{ $leadImageLocation or '' }} {{ $hasShadow or '' }} {{ $isAnimated or '' }} {{ $cardClasses or '' }}" @unless (empty($cardId)) id="{{ $cardId }}" @endunless>
 
     @unless (empty($hasLeadImage))
     <div class="lead">

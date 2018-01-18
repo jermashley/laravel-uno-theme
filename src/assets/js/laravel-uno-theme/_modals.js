@@ -1,22 +1,40 @@
-// People Modals
+window.samePageModalContent = function() {
 
-window.peopleModal = function() {
-
-    let cardId = $('.card, .launchesModal').attr('id');
-    
-
-    $('#' + cardId).find('.cardContent__action').click(function() {
-
-        $.get("/partials/people/" + cardId, function(peopleModalPartial) {
-
-            $('body').toggleClass('modal-open').append('<div class="modal">' + peopleModalPartial + '</div>');
-
+    $(document).ready(function(){
+            
+        $('.card, .launchesModal').find('.cardContent__action').on('click', function(){
+            let launchesModalId = $(this).closest('.card').attr('id');
+            let modalToLaunch = $('#' + launchesModalId + 'Modal');
+            console.log('You clicked to open ' + modalToLaunch);
+            setOverflowHidden('body');
+            $(modalToLaunch).closest('.modal').toggleClass('hidden');
         });
-        
-    });
+            
+        addCloseHandler();
 
-    $(document).ready(function() {
-        console.log('Ready to launch the people modal.');
+        closeModal();
+
     });
 
 }
+
+window.addCloseHandler = function() {
+    $('.modal').append('<span class="closesModal"><i class="far fa-times fa-fw"></i></span>');
+}
+
+window.closeModal = function() {
+    $('.closesModal').click(function(){
+        $(this).closest('.modal').toggleClass('hidden');
+        removeOverflowHidden('body');
+    });
+}
+
+window.setOverflowHidden = function(e) {
+    $(e).addClass('overflowHidden');
+}
+
+window.removeOverflowHidden = function(e) {
+    $(e).removeClass('overflowHidden');
+}
+
+samePageModalContent();

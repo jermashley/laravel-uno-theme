@@ -1,13 +1,15 @@
-.modal-open {
+.hidden {
+    display: none   !important;
+}
+
+.overflowHidden {
     overflow: hidden;
 }
 
 .modal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include setFlex(row, nowrap, unset, center, flex-start);
     overflow-y: scroll;
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,27 +17,39 @@
     bottom: 0;
     width: 100vw;
     height: 100%;
+    padding: 4rem 0 2rem;
+    background-color: transparent;
     transition: $transition-350;
-    &.hidden{
-        opacity: 0;
-        transition: $transition-350;
-    }
-    .closeModal {
+    .closesModal {
+        @include setFlex(row, nowrap, unset, center, center);
         position: absolute;
-        top: 2rem;
+        top: 1.5rem;
         right: 2rem;
         margin: 0;
         padding: 0;
         font-size: 2.5rem;
-        color: rgba($white, .65);
         transition: $transition-350;
         &:hover {
-            color: rgba($white, .9);
             cursor: pointer;
         }
     }
+    &.lightBg {
+        background-color: rgba($white, .95);
+        .closesModal {
+            color: $text-primary;
+            &:hover {
+                color: $red;
+            }
+        }
+    }
     &.darkBg {
-        background: rgba($default-background, .97);
+        background-color: rgba($default-background, .97);
+        .closesModal {
+            color: $grey-lightest;
+            &:hover {
+                color: $red;
+            }
+        }
     }
     .baseCard {
         margin-top: 6.5rem;
