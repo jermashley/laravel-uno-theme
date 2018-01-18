@@ -2,8 +2,8 @@ window.samePageModalContent = function() {
 
     $(document).ready(function(){
             
-        $('.card, .launchesModal').find('.cardContent__action').on('click', function(){
-            let launchesModalId = $(this).closest('.card').attr('id');
+        $('.launchesModal').find('.cardContent__action').on('click', function(){
+            let launchesModalId = $(this).closest('.launchesModal').attr('id');
             let modalToLaunch = $('#' + launchesModalId + 'Modal');
             console.log('You clicked to open ' + modalToLaunch);
             setOverflowHidden('body');
