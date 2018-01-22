@@ -1,0 +1,138 @@
+.form-group {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    @include setFlex(row, nowrap, unset, flex-start, flex-start);
+    @media screen and (max-width: 480px) {
+        @include setFlex(column, nowrap, unset, flex-start, flex-start);        
+    }
+}
+
+label {
+    @include setFlex(row, nowrap, unset, flex-start, center);
+    width: 100%;
+    height: auto;
+    margin: 0 0 1rem;
+    padding: 4px 4px 4px 8px;
+    border: 1px solid $grey-90;
+    border-radius: 5px;
+    background-color: mix($grey-100, $grey-90, 25%);
+    box-shadow: $box-shadow__static;
+    transition: $transition-500;
+    @media screen and (max-width: 480px) {
+        @include setFlex(column, nowrap, unset, flex-start, center);
+        padding: 4px;
+    }
+    &:not(:last-child) {
+        margin: 0 1rem 1rem 0;
+    }
+    &:last-child {
+        margin: 0 0 1rem;
+    }
+    .labelText {
+        margin: 0;
+        padding: 0 12px 0 0;
+        font-size: .95rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $text-primary;
+        white-space: nowrap;
+        @media screen and (max-width: 480px) {
+            padding: 0 0 4px;            
+        }
+        &--textarea {
+            padding: 10px 12px 0 0;
+            align-self: flex-start;
+            @media screen and (max-width: 480px) {
+                padding: 0 0 4px;
+                align-self: unset;
+            }
+        }
+    }
+    &:focus-within {
+        background-color: mix(mix($grey-90, $grey-80), $brand-primary, 55%);
+        border: 1px solid mix(mix($grey-90, $grey-80), $brand-primary, 40%);
+        box-shadow: $box-shadow__hover;
+        transition: $transition-250;
+        .labelText {
+            color: $white;
+        }
+    }
+    input, textarea, select {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 8px;
+        appearance: none;
+        border: 0px solid $grey-90;
+        border-radius: 4px;
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: $text-primary;
+        transition: $transition-500;
+        &::placeholder {
+            font-size: 1.15rem;
+            font-weight: 300;
+            color: rgba($text-primary, .5);
+        }
+        &:focus {
+            outline: none;
+            transition: $transition-250;
+        }
+    }
+    textarea {
+        resize: none;
+    }
+    &.chars-2 {
+        width: auto;
+        input, select {
+            width: 4rem;
+        }
+    }
+    &.chars-4 {
+        width: auto;
+        input, select {
+            width: 6rem;
+        }
+    }
+    &.chars-6 {
+        width: auto;
+        input, select {
+            width: 8rem;
+        }
+    }
+    &.chars-8 {
+        width: auto;
+        input, select {
+            width: 10rem;
+        }
+    }
+    &.chars-10 {
+        width: auto;
+        input, select {
+            width: 12rem;
+        }
+    }
+    &.chars-12 {
+        width: auto;
+        input, select {
+            width: 14rem;
+        }
+    }
+    &.chars-14 {
+        width: auto;
+        input, select {
+            width: 16rem;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        &.chars-2, &.chars-4, &.chars-6, &.chars-8, &.chars-10, &.chars-12, &.chars-14 {
+            width: 100%;
+            input, select {
+                width: 100%;
+            }            
+        }
+    }
+}

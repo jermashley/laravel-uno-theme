@@ -28,18 +28,18 @@
                 z-index: 10000;
                 width: 2.5rem;
                 height: 2.5rem;
-                border: 0.125rem solid rgba($grey-lighter, .75);
+                border: 0.125rem solid rgba($grey-80, .75);
                 border-radius: $border-radius;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 align-self: center;
-                color: $grey-lighter;
-                background-color: rgba($grey-lighter, 0);
+                color: $grey-80;
+                background-color: rgba($grey-80, 0);
                 transition: $transition-350;
                 &:hover {
-                    background-color: rgba($grey-lighter, .25);
+                    background-color: rgba($grey-80, .25);
                 }
                 @media only screen and (min-width: 1025px) {
                     display: none;

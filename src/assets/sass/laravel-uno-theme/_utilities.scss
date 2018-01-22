@@ -51,15 +51,15 @@ a.link {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    filter: drop-shadow(0 .0625rem .125rem rgba($grey-dark, .1));
-    border: 0.0625rem solid $grey;
+    filter: drop-shadow(0 .0625rem .125rem rgba($grey-10, .1));
+    border: 0.0625rem solid $grey-30;
     border-radius: $border-radius;
-    background: $grey;
+    background: $grey-30;
     color: $white;
     transition: $transition-500;
     &:hover {
         transform: translateY(-1px);
-        filter: drop-shadow(0 .25rem .5rem rgba($grey-dark, .25));
+        filter: drop-shadow(0 .25rem .5rem rgba($grey-10, .25));
         cursor: pointer;
         transition: $transition-250;
     }

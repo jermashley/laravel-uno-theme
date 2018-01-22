@@ -83,7 +83,7 @@ body {
         height: 100vh;
         background-color: rgba($default-background, .95);
         box-sizing: border-box;
-        border-bottom: .75rem solid rgba($grey-lightest, .25);
+        border-bottom: .75rem solid rgba($grey-90, .25);
         transition: $transition-350;
         overflow: scroll;
     }
@@ -289,12 +289,12 @@ body {
             width: 100%;
             min-height: 5rem;
             background-color: $white;
-            border: 0.0625rem solid $grey-lighter;
+            border: 0.0625rem solid $grey-80;
             border-top: none;
             transition: $transition-350;
             &:first-of-type {
                 border-radius: $border-radius $border-radius 0 0;
-                border-top: 0.0625rem solid $grey-lighter;
+                border-top: 0.0625rem solid $grey-80;
             }
             &:last-of-type {
                 border-radius: 0 0 $border-radius $border-radius;
@@ -303,7 +303,7 @@ body {
                 border-radius: $border-radius;
             }
             &:hover {
-                //background-color: rgba($grey-lightest, .5);
+                //background-color: rgba($grey-90, .5);
                 cursor: pointer;
             }
             .accordion__toggle {
@@ -355,7 +355,7 @@ body {
             }
             span:last-of-type {
                 flex-grow: 1;
-                border-bottom: 0.125rem solid $grey-lighter;
+                border-bottom: 0.125rem solid $grey-80;
                 margin-left: 1.5rem;
                 margin-bottom: 2.15rem;
                 @media only screen and (max-width: 768px) {
@@ -478,7 +478,7 @@ body {
             width: 100%;
             margin: 1.5rem 0;
             padding: 1.5rem;
-            background-color: $grey-lightest;
+            background-color: $grey-90;
             border-radius: $border-radius;
             span.attribute {
                 display: block;
@@ -625,7 +625,7 @@ body {
     justify-content: flex-start;
     overflow: hidden;
     border-radius: $border-radius;
-    border: 0.0625rem solid $grey-lightest;
+    border: 0.0625rem solid $grey-90;
     filter: $drop-shadow__static;
     transition: $transition-350;
     &:hover {
@@ -700,7 +700,7 @@ img.imageBg  {
 .docDownloads {
     margin: 3rem 0;
     padding: 1.5rem 2.5rem;
-    background: $grey-lightest;
+    background: $grey-90;
     text-align: center;
     border-radius: $border-radius;
     .docs {
@@ -715,7 +715,7 @@ img.imageBg  {
 //     margin: 1.5rem .5rem;;
 //     background-color: $white;
 //     box-sizing: border-box;
-//     border: 0.0625rem solid $grey-lighter;
+//     border: 0.0625rem solid $grey-80;
 //     overflow: hidden;
 //     border-radius: $border-radius;
 //     filter: $drop-shadow__static;
@@ -855,7 +855,7 @@ img.imageBg  {
 //     &__divider {
 //         width: 80%;
 //         height: 0.0625rem;
-//         border-top: 0.0625rem solid $grey-lighter;
+//         border-top: 0.0625rem solid $grey-80;
 //     }
 //     &__text {
 //         width: 85%;

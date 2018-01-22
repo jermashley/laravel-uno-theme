@@ -1,29 +1,3 @@
-$font-family-sans-serif: 'Muli';
-
-// Basic Color
-$white: #ffffff;
-$black: #000000;
-$red: #c62828;
-$orange: #e17e3d;
-$yellow: #e5d335;
-$green: #2e7d32;
-$blue: #1565c0;
-$teal: #5bc0de;
-$pink: #ff5b77;
-$purple: #613d7c;
-
-// Create greyscale
-$grey-dark: #232323;
-$grey: #555555;
-$grey-light: #c8c8c8;
-$grey-lighter: #dcdcdc;
-$grey-lightest: #f0f0f0;
-
-// Branding
-$text-primary: #32424b;
-$default-background: #32424b;
-
-
 // Transition
 $transition-150: 150ms ease-in-out;
 $transition-250: 250ms ease-in-out;
@@ -41,6 +15,6 @@ $drop-shadow__static: drop-shadow(0px 4px 6px rgba($default-background, .35));
 
 $drop-shadow__hover: drop-shadow(0px 8px 16px rgba($default-background, .35));
 
-$box-shadow__none: 0px 0px 0px rgba($default-background, 0);
-$box-shadow__static: 0px 4px 6px rgba($default-background, .35);
-$box-shadow__hover: 0px 8px 16px rgba($default-background, .35);
+$box-shadow__none: 0px 0px 0px 0px rgba($grey-10, 0);
+$box-shadow__static: 0px 2px 4px 0px rgba($grey-10, .1);
+$box-shadow__hover: 0px 6px 12px 1px rgba($grey-10, .1);
