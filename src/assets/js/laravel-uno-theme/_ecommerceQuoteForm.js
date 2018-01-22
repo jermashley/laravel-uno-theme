@@ -1,3 +1,16 @@
+window.redirectForECommerce = function() {
+    $('#typeOfBusiness').change(function() {
+        console.log('You selected eCommerce.');
+        if( $(this).val() == 'eCommerce') {
+
+            $('#ecommerceAlert').toggleClass('hidden');
+            
+        }
+    });
+}
+
+redirectForECommerce();
+
 function bodyOverflowHidden() {
     
         $('body').toggleClass('overflowHidden');
