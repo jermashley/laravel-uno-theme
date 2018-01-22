@@ -7,7 +7,7 @@
 }
 
 .modal {
-    @include setFlex(row, nowrap, unset, center, flex-start);
+    @include setFlex(column, nowrap, unset, flex-start, center);
     overflow-y: scroll;
     z-index: 1000;
     position: fixed;

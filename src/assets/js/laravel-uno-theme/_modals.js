@@ -18,6 +18,18 @@ window.samePageModalContent = function() {
 
 }
 
+window.redirectForECommerce = function() {
+    $('#typeOfBusiness').change(function() {
+        if( $(this).val() == 'eCommerce') {
+            console.log('You selected eCommerce.');
+
+            $('#ecommerceAlert').toggleClass('hidden');
+            setOverflowHidden('body');
+
+        }
+    });
+}
+
 window.addCloseHandler = function() {
     $('.modal').append('<span class="closesModal"><i class="far fa-times fa-fw"></i></span>');
 }
@@ -38,3 +50,4 @@ window.removeOverflowHidden = function(e) {
 }
 
 samePageModalContent();
+redirectForECommerce();

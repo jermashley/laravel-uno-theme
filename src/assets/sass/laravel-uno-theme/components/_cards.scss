@@ -220,7 +220,6 @@
         &__action {
             @include setFlex(row, nowrap, unset, center, center);
             width: 100%;
-            margin: 0;
             padding: 1.25rem 0;
             font-size: .95rem;
             font-weight: 700;

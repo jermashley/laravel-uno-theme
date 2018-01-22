@@ -71,7 +71,7 @@
         @endunless
 
         @unless (empty($hasAction))
-        <a href="{{ $actionLink or '#' }}" class="cardContent__action link">
+        <a href="{{ $actionLink or '#' }}" class="cardContent__action {{ $actionClasses or 'link' }}">
             {{ $actionText or 'Read More' }}
         </a>
         @endunless

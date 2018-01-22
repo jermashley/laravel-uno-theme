@@ -56,6 +56,7 @@ a.link {
     border-radius: $border-radius;
     background: $grey-30;
     color: $white;
+    text-shadow: 0px 1px 2px rgba($grey-10, .3);
     transform: translateY(0);
     transition: $transition-350;
     &:hover {
@@ -65,12 +66,39 @@ a.link {
         transition: $transition-150;
     }
     &__primary {
-        background: $blue;
-        border: 0.0625rem solid rgba($blue, .15);
+        background: $info;
+        border: 0.0625rem solid rgba($info, .15);
         &:hover {
             color: $white;
-            background: darken($blue, 5%);
-            border: 0.0625rem solid rgba($blue, .25);
+            background: darken($info, 5%);
+            border: 0.0625rem solid rgba($info, .25);
+        }
+    }
+    &__success {
+        background: $success;
+        border: 0.0625rem solid rgba($success, .15);
+        &:hover {
+            color: $white;
+            background: darken($success, 5%);
+            border: 0.0625rem solid rgba($success, .25);
+        }
+    }
+    &__danger {
+        background: $danger;
+        border: 0.0625rem solid rgba($danger, .15);
+        &:hover {
+            color: $white;
+            background: darken($danger, 5%);
+            border: 0.0625rem solid rgba($danger, .25);
+        }
+    }
+    &__critical {
+        background: $critical;
+        border: 0.0625rem solid rgba($critical, .15);
+        &:hover {
+            color: $white;
+            background: darken($critical, 5%);
+            border: 0.0625rem solid rgba($critical, .25);
         }
     }
 }
@@ -214,4 +242,11 @@ a.link {
 
 .w-100 {
     width: 100%;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    margin: 1.5rem auto;
+    border: 1px solid $grey-90;
 }

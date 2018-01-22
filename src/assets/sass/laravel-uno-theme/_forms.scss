@@ -34,9 +34,9 @@ label {
         margin: 0;
         padding: 0 12px 0 0;
         font-size: .95rem;
-        font-weight: 700;
+        font-weight: 900;
         text-transform: uppercase;
-        color: $text-primary;
+        color: $grey-40;
         white-space: nowrap;
         @media screen and (max-width: 480px) {
             padding: 0 0 4px;            
@@ -82,9 +82,40 @@ label {
         }
         &::placeholder {
             font-size: 1.15rem;
-            font-weight: 300;
-            color: rgba($text-primary, .5);
+            font-weight: 400;
+            color: rgba($text-primary, .75);
         }
+    }
+    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    &.radio {
+        @include setFlex(row, nowrap, unset, space-between, center);
+        input[type="radio"] {
+            position: relative;
+            border: 2px solid $grey-40;
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 6px;
+            background-color: $white;
+            &:checked {
+                border: 2px solid $brand-primary;
+                background-color: $white;
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    content: '\f00c';
+                    font-family: 'Font Awesome 5';
+                    font-size: .85rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    color: $brand-primary;
+                }
+            }
+        }        
     }
     textarea {
         resize: none;
@@ -146,4 +177,10 @@ label {
             }            
         }
     }
+}
+
+#quoteForm {
+    width: 100%;
+    margin: 0 1rem 1rem;
+    max-width: 75rem;
 }
