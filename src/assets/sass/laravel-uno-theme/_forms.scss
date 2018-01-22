@@ -69,21 +69,21 @@ label {
         appearance: none;
         border: 2px solid $grey-90;
         border-radius: 4px;
+        box-shadow: $box-shadow__none;
         font-size: 1.15rem;
         font-weight: 600;
         color: $text-primary;
         transition: $transition-500;
         &:focus {
             border: 2px solid rgba($brand-primary, .95);
+            box-shadow: $box-shadow__focus;
+            outline: none;
+            transition: $transition-250;
         }
         &::placeholder {
             font-size: 1.15rem;
             font-weight: 300;
             color: rgba($text-primary, .5);
-        }
-        &:focus {
-            outline: none;
-            transition: $transition-250;
         }
     }
     textarea {
