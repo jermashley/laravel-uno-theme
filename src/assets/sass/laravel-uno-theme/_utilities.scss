@@ -51,24 +51,25 @@ a.link {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    filter: drop-shadow(0 .0625rem .125rem rgba($grey-10, .1));
+    box-shadow: $box-shadow__static;
     border: 0.0625rem solid $grey-30;
     border-radius: $border-radius;
     background: $grey-30;
     color: $white;
-    transition: $transition-500;
+    transform: translateY(0);
+    transition: $transition-350;
     &:hover {
         transform: translateY(-1px);
-        filter: drop-shadow(0 .25rem .5rem rgba($grey-10, .25));
+        box-shadow: $box-shadow__hover;
         cursor: pointer;
-        transition: $transition-250;
+        transition: $transition-150;
     }
     &__primary {
-        background: lighten($blue, 20%);
+        background: $blue;
         border: 0.0625rem solid rgba($blue, .15);
         &:hover {
             color: $white;
-            background: lighten($blue, 10%);
+            background: darken($blue, 5%);
             border: 0.0625rem solid rgba($blue, .25);
         }
     }
