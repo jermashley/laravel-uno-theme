@@ -51,8 +51,8 @@ label {
         }
     }
     &:focus-within {
-        background-color: mix(mix($grey-90, $grey-80), $brand-primary, 55%);
-        border: 1px solid mix(mix($grey-90, $grey-80), $brand-primary, 40%);
+        background-color: rgba($brand-primary, .85);
+        border: 1px solid rgba($brand-primary, .95);
         box-shadow: $box-shadow__hover;
         transition: $transition-250;
         .labelText {
