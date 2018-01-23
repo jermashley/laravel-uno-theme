@@ -106,7 +106,7 @@ function bodyOverflowHidden() {
     
             lineItemTitle = lineItem;
     
-            $('.shipmentDetails').children('.accordion__inner').append(newLineItem).find('#lineItem').attr('id', lineItemId).find('.lineItemTitle').append(lineItemTitle);
+            $('.lineItemManagement').prepend(newLineItem).find('#lineItem').attr('id', lineItemId).find('.lineItemTitle').append(lineItemTitle);
     
             // updateInputNumberOfCartons(lineItemId);
     
@@ -150,7 +150,7 @@ function bodyOverflowHidden() {
     
     });
     
-    $('.shipmentDetails').find('.addLine').click(function () {
+    $('.lineItemManagement').find('.addLine').click(function () {
     
         console.log('You clicked to add a new line item.');
     
