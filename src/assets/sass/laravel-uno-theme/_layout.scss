@@ -698,16 +698,13 @@ img.imageBg  {
 }
 
 .docDownloads {
+    @include setFlex(row, wrap, unset, space-evenly, flex-start);
     margin: 3rem 0;
     padding: 1.5rem 2.5rem;
-    background: $grey-90;
-    text-align: center;
+    background: rgba($grey-90, .35);
+    border: 2px solid rgba($grey-90, .5);
     border-radius: $border-radius;
-    .docs {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+    text-align: center;
 }
 
 // .baseCard {
