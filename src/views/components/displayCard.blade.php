@@ -12,19 +12,19 @@
             <span class="leadInsetText">{{ $insetText or '' }}</span>
             @endunless
         @endunless
-        
+
         @unless (empty($hasTimestamp))
         <span class="timestamp">{{ $timestamp or '' }}</span>
         @endunless
 
         <img src="{{ $leadImageSource or '' }}" class="imageBg {{ $leadImageFit or '' }} {{ $leadImagePosition or '' }} {{ $leadImageIsDimmed or '' }}" alt="{{ $leadImageDescription or '' }}">
-        
+
     </div>
     @endunless
 
     <div class="cardContent">
 
-        @unless (empty($hasHeading))
+        @unless (empty($cardHeading))
         <span class="cardContent__heading {{ $headingSize or '' }}">
             {{ $cardHeading or '' }}
         </span>
@@ -34,9 +34,9 @@
         <span class="cardContent__divider"></span>
         @endunless
 
-        @unless (empty($hasText))
+        @unless (empty($cardText))
         <span class="cardContent__text {{ $textSize or '' }}">
-            {{ $cardText or '' }}
+            {{ str_limit($cardText) }}
         </span>
         @endunless
 
