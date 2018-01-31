@@ -51,7 +51,7 @@
 
                 @unless (empty($twitter))
                     @slot('twitter')
-                        {{ $twitter }}
+                    {{ $twitter }}
                     @endslot
                 @endunless
 
