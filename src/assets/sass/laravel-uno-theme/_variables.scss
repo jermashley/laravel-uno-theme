@@ -15,7 +15,7 @@ $drop-shadow__static: drop-shadow(0px 4px 6px rgba($default-background, .35));
 
 $drop-shadow__hover: drop-shadow(0px 8px 16px rgba($default-background, .35));
 
-$box-shadow__none: 0px 0px 0px 0px rgba($grey-10, 0);
-$box-shadow__static: 0px 2px 4px 0px rgba($grey-10, .1);
-$box-shadow__hover: 0px 12px 24px 2px rgba($grey-10, .2);
-$box-shadow__focus: 0px 0px 2px 1px rgba($grey-10, .15);
+$box-shadow__none: 0px 0px 0px 0px rgba(mix($grey-50, $brand-primary), 0);
+$box-shadow__static: 0px 2px 4px 0px rgba(mix($grey-50, $brand-primary), .1);
+$box-shadow__hover: 0px 12px 24px 2px rgba(mix($grey-50, $brand-primary), .2);
+$box-shadow__focus: 0px 0px 2px 1px rgba(mix($grey-50, $brand-primary), .15);
