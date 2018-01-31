@@ -25,7 +25,7 @@
 
                         @if (\Route::is('home'))
 
-                            
+
 
                         @else
 
@@ -80,7 +80,7 @@
             <div class="footer-content">
 
                 <span>Flat World Holdings</span>
-                <span>All Rights Reserved &copy; 2017</span>
+                <span>All Rights Reserved &copy; {{ date('Y') }}</span>
 
             </div>
 
