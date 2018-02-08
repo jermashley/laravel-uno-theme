@@ -21,7 +21,7 @@ a.link {
     font-weight: 600;
     transition: $transition-500;
     &:link {
-        color: lighten($blue, 20%);
+        color: darken($blue, 10%);
     }
     &:hover {
         text-decoration: none;
@@ -198,6 +198,10 @@ a.link {
 
 .ml-2 {
     margin-left: .5rem;
+}
+
+.mr-2 {
+    margin-right: .5rem;
 }
 
 .mt-2 {

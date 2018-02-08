@@ -24,22 +24,33 @@
 
     <div class="cardContent">
 
+        {{-- Card Heading --}}
         @unless (empty($cardHeading))
         <span class="cardContent__heading {{ $headingSize or '' }}">
             {{ $cardHeading or '' }}
         </span>
         @endunless
 
+        {{-- Heading / Content Divider --}}
         @unless (empty($hasDivider))
         <span class="cardContent__divider"></span>
         @endunless
 
-        @unless (empty($cardText))
+        {{-- Truncated Card Text --}}
+        @unless (empty($truncatedCardText))
         <span class="cardContent__text {{ $textSize or '' }}">
-            {{ str_limit($cardText) }}
+            {{ str_limit($truncatedCardText) }}
         </span>
         @endunless
 
+        {{-- Extended (Full-Length) Card Text --}}
+        @unless (empty($extendedCardText))
+        <div class="cardContent__text {{ $textSize or '' }}">
+            {{ $extendedCardText }}
+        </div>
+        @endunless
+
+        {{-- Social Footer Content --}}
         @unless (empty($hasFooter))
         <span class="cardContent__footer">
             @component('components.socialIcons')
@@ -51,7 +62,7 @@
 
                 @unless (empty($twitter))
                     @slot('twitter')
-                    {{ $twitter }}
+                        {{ $twitter }}
                     @endslot
                 @endunless
 
@@ -70,9 +81,10 @@
         </span>
         @endunless
 
-        @unless (empty($hasAction))
+        {{-- Card Action --}}
+        @unless (empty($cardAction))
         <a href="{{ $actionLink or '#' }}" class="cardContent__action {{ $actionClasses or 'link' }}">
-            {{ $actionText or 'Read More' }}
+            {{ $cardAction or 'Read More' }}
         </a>
         @endunless
 
