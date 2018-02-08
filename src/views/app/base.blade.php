@@ -88,15 +88,7 @@
 
     </div>
 
-
-    <script src="{{ mix('js/app.js') }}"></script>
-    <script src="{{ mix('js/fontawesome-all.js') }}"></script>
-
-    <script>
-        window.Laravel = <?php echo json_encode([
-            'csrfToken' => csrf_token(),
-        ]); ?>
-    </script>
+    @include('home.scripts')
 
 </body>
 </html>
