@@ -1,6 +1,7 @@
 // Helper Mixins
 @mixin setFlex($flex-direction, $flex-wrap, $flex-grow, $justify-content, $align-items) {
     display: flex;
+    flex-basis: auto;
     flex-direction: $flex-direction;
     flex-wrap: $flex-wrap;
     flex-grow: $flex-grow;

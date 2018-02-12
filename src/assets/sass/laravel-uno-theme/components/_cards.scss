@@ -121,6 +121,7 @@
     .cardContent {
         grid-area: cardContent;
         display: flex;
+        flex-basis: auto;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -232,6 +233,7 @@
         height: 10rem;
         margin: .75rem 0;
         display: flex;
+        flex-basis: auto;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -245,6 +247,7 @@
         height: 4rem;
         margin: 1.25rem 0;
         display: flex;
+        flex-basis: auto;
         flex-direction: row;
         justify-content: center;
         align-items: center;
