@@ -294,3 +294,52 @@ hr {
     margin: 1.5rem auto;
     border: 1px solid $grey-90;
 }
+
+.message-flash {
+    position: relative;
+    width: 100%;
+    @include setFlex(row, nowrap, unset, center, center);
+    margin: .5rem 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba($brand-primary, .1);
+    border: 1px solid rgba($brand-primary, .2);
+    border-radius: $border-radius;
+    .close {
+        @include setFlex(row, nowrap, unset, center, center);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 1rem;
+        background-color: rgba($brand-primary, .05);
+        border-left: 1px solid rgba($brand-primary, .05);
+        font-size: 1.5rem;
+        transition: $transition-500;
+        &:hover {
+            background-color: rgba($brand-primary, .1);
+            border-left: 1px solid rgba($brand-primary, .2);
+            cursor: pointer;
+            transition: $transition-250;
+        }
+    }
+    &.critical {
+        background-color: rgba($critical, .1);
+        border: 1px solid rgba($critical, .2);
+        &:hover {
+            background-color: rgba($critical, .1);
+            border-left: 1px solid rgba($critical, .2);
+        }
+        .close {
+            background-color: rgba($critical, .05);
+            border-left: 1px solid rgba($critical, .05);
+            &:hover {
+                background-color: rgba($critical, .1);
+                border-left: 1px solid rgba($critical, .2);
+            }
+        }
+    }
+}

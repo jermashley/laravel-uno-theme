@@ -5,3 +5,11 @@ window.closeBannerFlash = function () {
 }
 
 closeBannerFlash();
+
+window.closeParent = function () {
+    $('*[data-toggle="hide-parent"]').on('click', function() {
+        $(this).parent().hide(250);
+    })
+}
+
+closeParent();
