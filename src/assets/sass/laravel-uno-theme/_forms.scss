@@ -5,7 +5,7 @@
     padding: 0;
     @include setFlex(row, nowrap, unset, flex-start, flex-start);
     @media screen and (max-width: 480px) {
-        @include setFlex(column, nowrap, unset, flex-start, flex-start);        
+        @include setFlex(column, nowrap, unset, flex-start, flex-start);
     }
 }
 
@@ -39,7 +39,7 @@ label {
         color: $grey-40;
         white-space: nowrap;
         @media screen and (max-width: 480px) {
-            padding: 0 0 4px;            
+            padding: 0 0 4px;
         }
         &--textarea {
             padding: 10px 12px 0 0;
@@ -50,6 +50,17 @@ label {
             }
         }
     }
+    .error {
+        margin: 0;
+        margin: 0 6px;
+        padding: 0;
+        font-size: .95rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $red;
+        white-space: nowrap;
+        transition: $transition-500;
+    }
     &:focus-within {
         background-color: rgba($brand-primary, .85);
         border: 1px solid rgba($brand-primary, .95);
@@ -57,6 +68,13 @@ label {
         transition: $transition-250;
         .labelText {
             color: $white;
+        }
+        .error {
+            color: $red;
+            padding: 1px 2px;
+            background-color: $white;
+            border-radius: 3px;
+            transition: $transition-250;
         }
     }
     input, textarea, select {
@@ -114,7 +132,34 @@ label {
                 &::before {
                     position: absolute;
                     top: 50%;
-                    left: 50%;
+                    left: 55%;
+                    transform: translate(-50%, -50%);
+                    content: '\f0c8';
+                    font-family: 'Font Awesome 5';
+                    font-size: .85rem;
+                    font-style: normal;
+                    font-weight: 900;
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+    &.checkbox {
+        @include setFlex(row, nowrap, unset, space-between, center);
+        input[type="checkbox"] {
+            position: relative;
+            border: 2px solid $grey-40;
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 6px;
+            background-color: $white;
+            &:checked {
+                border: 2px solid $brand-primary;
+                background-color: $white;
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    left: 55%;
                     transform: translate(-50%, -50%);
                     content: '\f00c';
                     font-family: 'Font Awesome 5';
@@ -124,7 +169,7 @@ label {
                     color: $brand-primary;
                 }
             }
-        }        
+        }
     }
     textarea {
         resize: none;
@@ -183,7 +228,7 @@ label {
             width: 100%;
             input, select {
                 width: 100%;
-            }            
+            }
         }
     }
 }
