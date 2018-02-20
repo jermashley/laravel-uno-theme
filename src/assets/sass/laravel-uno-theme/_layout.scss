@@ -183,8 +183,12 @@ body {
             }
         }
         .snippet.cta {
-            h2 {
-                font-weight: 300;
+            span {
+                margin: 0 .5rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                font-size: 3.5rem;
+                opacity: .85;
             }
             div {
                 display: flex;
