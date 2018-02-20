@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     @include('home.meta')
-    <title>{{ config('app.name') }} @yield('title')</title>
+    <title>@yield('title'){{ config('app.name') }}</title>
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css')}}">
 </head>
